@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/lectrum-myFacebook/static/js/runtime~main.63ecd8f3.js"
   },
   {
-    "revision": "8ac8c30af957de75b5a6",
-    "url": "/lectrum-myFacebook/static/js/main.8ac8c30a.chunk.js"
+    "revision": "c0b4e26d849eec11a9b3",
+    "url": "/lectrum-myFacebook/static/js/main.c0b4e26d.chunk.js"
   },
   {
     "revision": "ae4d89b0a84e233ce05a",
     "url": "/lectrum-myFacebook/static/js/1.ae4d89b0.chunk.js"
   },
   {
-    "revision": "8ac8c30af957de75b5a6",
-    "url": "/lectrum-myFacebook/static/css/main.68af1ebc.chunk.css"
+    "revision": "c0b4e26d849eec11a9b3",
+    "url": "/lectrum-myFacebook/static/css/main.694a4115.chunk.css"
   },
   {
-    "revision": "67f0ed2684e2fc5e4355c21196f19cd1",
+    "revision": "6475fbd74c77030192065e1b47331093",
     "url": "/lectrum-myFacebook/index.html"
   }
 ];
