@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/lectrum-myFacebook/precache-manifest.b42f7ec1f30a6d4221e14c9d621df617.js"
+  "/lectrum-myFacebook/build/precache-manifest.650c3f3b2b8f226938f6653a172e3994.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/lectrum-myFacebook/index.html", {
+workbox.routing.registerNavigationRoute("/lectrum-myFacebook/build/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
