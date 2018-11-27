@@ -6,9 +6,11 @@
   "dependencies": {
     "gh-pages": "^2.0.1",
     "moment": "^2.22.2",
+    "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-hot-loader": "^4.3.12",
+    "react-portal": "^4.1.5",
     "react-scripts": "2.1.1"
   },
   "scripts": {
