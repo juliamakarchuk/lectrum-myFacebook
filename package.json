@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://juliamakarchuk.github.io/lectrum-myFacebook/build",
   "dependencies": {
+    "classnames": "^2.2.6",
     "gh-pages": "^2.0.1",
     "moment": "^2.22.2",
     "prop-types": "^15.6.2",

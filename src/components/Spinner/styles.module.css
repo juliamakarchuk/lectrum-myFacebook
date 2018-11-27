@@ -15,6 +15,6 @@
     border-radius: 100%;
     top: 5px;
     right: 5px;
-    animation: spinner 1s infinite linear;
+    animation: spinner 0.5s infinite linear;
     z-index: 2;
 }
