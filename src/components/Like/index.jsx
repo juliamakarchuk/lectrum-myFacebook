@@ -3,6 +3,7 @@ import { string, func, arrayOf, shape } from 'prop-types';
 import classNames from 'classnames';
 
 import { withProfile } from '../HOC/withProfile';
+import { api, TOKEN } from '../../config/api';
 
 import Styles from './styles.module.css';
 

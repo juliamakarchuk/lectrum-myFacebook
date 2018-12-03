@@ -3,12 +3,13 @@ import moment from 'moment';
 import { func, string, number, array } from 'prop-types';
 
 import { withProfile } from '../HOC/withProfile';
+import Catcher from '../Catcher';
 import { Consumer } from '../HOC/withProfile';
 import Like from '../Like'
 
 import Styles from './styles.module.css';
-
 class Post extends Component{
+
     static propTypes = {
         id:        string.isRequired,
         comment:   string.isRequired,
@@ -17,13 +18,34 @@ class Post extends Component{
         _removePost: func.isRequired,
         likes:     array.isRequired
     }
+    _getCross = ()=>{
+        const { firstName, lastName, currentUserLastName, currentUserFirstName} = this.props;
+
+        return `${firstName} ${lastName}` === `${currentUserFirstName} ${currentUserLastName}` 
+        ? <span className = { Styles.cross } onClick = {()=>this.props._removePost(this.props.id)}></span>
+        : null
+    }
     render() {
-        const { comment, created, _likePost, _removePost, id, likes, avatar, currentUserFirstName, currentUserLastName} = this.props;
+        const { 
+            comment,
+            created, 
+            _likePost, 
+            _removePost, 
+            id, 
+            likes, 
+            avatar, 
+            firstName,
+            lastName,
+            currentUserLastName} 
+            = this.props;
+        
+        const cross = this._getCross();
         return (
                     <section className = { Styles.post } >
-                       <span className = { Styles.cross } onClick = {()=>_removePost(id)}></span>
+                    {cross}
+                       {/* <span className = { Styles.cross } onClick = {()=>_removePost(id)}></span> */}
                         <img src = { avatar } />
-                        <a> {`${ currentUserFirstName } ${ currentUserLastName }`} </a>
+                        <a> {`${ firstName } ${ lastName }`} </a>
                         <time>{moment.unix(created).format('MMMM D h:mm:ss a')}</time>
                         <p>{ comment }</p>
                         <Like 
