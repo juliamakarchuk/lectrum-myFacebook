@@ -1,14 +1,14 @@
 {
-  "main.css": "/lectrum-myFacebook/build/static/css/main.7895f868.chunk.css",
-  "main.js": "/lectrum-myFacebook/build/static/js/main.42164a86.chunk.js",
-  "main.js.map": "/lectrum-myFacebook/build/static/js/main.42164a86.chunk.js.map",
-  "static/js/1.58e1edbe.chunk.js": "/lectrum-myFacebook/build/static/js/1.58e1edbe.chunk.js",
-  "static/js/1.58e1edbe.chunk.js.map": "/lectrum-myFacebook/build/static/js/1.58e1edbe.chunk.js.map",
+  "main.css": "/lectrum-myFacebook/build/static/css/main.ce26da62.chunk.css",
+  "main.js": "/lectrum-myFacebook/build/static/js/main.35f8e5c3.chunk.js",
+  "main.js.map": "/lectrum-myFacebook/build/static/js/main.35f8e5c3.chunk.js.map",
+  "static/js/1.a95f816a.chunk.js": "/lectrum-myFacebook/build/static/js/1.a95f816a.chunk.js",
+  "static/js/1.a95f816a.chunk.js.map": "/lectrum-myFacebook/build/static/js/1.a95f816a.chunk.js.map",
   "runtime~main.js": "/lectrum-myFacebook/build/static/js/runtime~main.f2270fc3.js",
   "runtime~main.js.map": "/lectrum-myFacebook/build/static/js/runtime~main.f2270fc3.js.map",
   "static/media/lisa.png": "/lectrum-myFacebook/build/static/media/lisa.c0366208.png",
-  "static/css/main.7895f868.chunk.css.map": "/lectrum-myFacebook/build/static/css/main.7895f868.chunk.css.map",
+  "static/css/main.ce26da62.chunk.css.map": "/lectrum-myFacebook/build/static/css/main.ce26da62.chunk.css.map",
   "index.html": "/lectrum-myFacebook/build/index.html",
-  "precache-manifest.8875aafb969a52c44191b887c0df5bb4.js": "/lectrum-myFacebook/build/precache-manifest.8875aafb969a52c44191b887c0df5bb4.js",
+  "precache-manifest.049eb68c8033fd571aa7bc4b19d2f430.js": "/lectrum-myFacebook/build/precache-manifest.049eb68c8033fd571aa7bc4b19d2f430.js",
   "service-worker.js": "/lectrum-myFacebook/build/service-worker.js"
 }
