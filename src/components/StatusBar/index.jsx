@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Transition } from 'react-transition-group';
+import { fromTo } from 'greensock';
 
 import { withProfile } from '../HOC/withProfile'
 import cx from 'classnames';
@@ -13,7 +15,7 @@ class StatusBar extends Component {
 
     componentDidMount(){
         socket.on('connect', ()=>{
-            this.setState({
+            this.setState({ 
                 online: true,
             })
         });
@@ -27,6 +29,10 @@ class StatusBar extends Component {
         socket.removeListener('connect');
         socket.removeListener('disconnect');
     }
+
+    _animateStatusBarEnter = (statusBar) =>{
+        fromTo(statusBar, 1, { opacity: 0 }, { opacity: 1 })
+    }
     render () {
         const { avatar, currentUserFirstName, currentUserLastName} = this.props;
         const { online } = this.state;
@@ -35,8 +41,12 @@ class StatusBar extends Component {
             [Styles.offline]: !online 
         });
         const statusMessage = online ? 'Online' : 'Offline';
-        console.log(online);
        return(
+           <Transition 
+              in
+              appear
+              timeout = { 1000 }
+              onEnter = { this._animateStatusBarEnter }>
               <section className = {Styles.statusBar}>
               <div className = {statusStyle}>
                   <div>{statusMessage}</div>
@@ -49,6 +59,7 @@ class StatusBar extends Component {
                     <span> { currentUserLastName } </span>
                  </button>
                 </section>
+            </Transition>
        )
     }
 }

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/lectrum-myFacebook/build/precache-manifest.049eb68c8033fd571aa7bc4b19d2f430.js"
+  "/lectrum-myFacebook/build/precache-manifest.696351df21be66e8e9d5c5de9815da02.js"
 );
 
 workbox.clientsClaim();
