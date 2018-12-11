@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { Transition } from 'react-transition-group';
+import { fromTo } from 'greensock';
 
 import { withProfile } from '../HOC/withProfile';
 import StatusBar from '../StatusBar';
@@ -6,9 +8,10 @@ import Composer from '../Composer';
 import Post from '../Post';
 import Spinner from '../Spinner';
 import Catcher from '../Catcher';
+import Postman from '../Postman';
 
 import Styles from './styles.module.css';
-import { getUniqueID, delay } from '../../instruments/index';
+import { delay } from '../../instruments/index';
 import { api, TOKEN, GROUP_ID } from '../../config/api';
 import { socket } from '../../socket/init';
 
@@ -135,6 +138,13 @@ class Feed extends Component{
     }))
     }
 
+    _animateComposerEnter = (composer) =>{
+        fromTo(composer,
+                1,
+                { opacity: 0, rotationX: 50 },
+                { opacity: 1, rotationX: 0 });
+    };
+
     render () {
         const { posts , isSpinning } = this.state;
 
@@ -153,7 +163,14 @@ class Feed extends Component{
             <section className = { Styles.feed }>
                 <Spinner isSpinning = { isSpinning }/>
                 <StatusBar />
-                <Composer _createPost = { this._createPost }/>
+                <Transition
+                  in
+                  appear
+                  timeout = { 2000 }
+                  onEnter = { this._animateComposerEnter }>
+                   <Composer _createPost = { this._createPost }/>
+                </Transition>
+                <Postman />
                 {postsJSX}
             </section>
         )
